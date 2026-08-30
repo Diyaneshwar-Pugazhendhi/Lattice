@@ -1,0 +1,60 @@
+{
+  "name": "taskboard",
+  "version": "0.1.0",
+  "description": "A real-time, collaborative task management board with authentication and live updates.",
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "prisma",
+    "socketio",
+    "authjs",
+    "tailwind"
+  ],
+  "author": "Diyaneshwar-Pugazhendhi",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:generate": "prisma generate",
+    "db:seed": "prisma db seed",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.7.2",
+    "@auth/nextjs": "^1.7.1",
+    "@next/env": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "next": "15.1.3",
+    "next-themes": "^0.4.4",
+    "@prisma/client": "^5.22.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "zod": "^3.23.8",
+    "lucide-react": "^0.468.0",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
+    "date-fns": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "prisma": "^5.22.0",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

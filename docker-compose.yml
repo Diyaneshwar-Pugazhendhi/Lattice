@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=file:./dev.db
+      - AUTH_SECRET=dev-secret-change-in-production
+      - AUTH_GOOGLE_ID=${AUTH_GOOGLE_ID}
+      - AUTH_GOOGLE_SECRET=${AUTH_GOOGLE_SECRET}
+      - NEXT_PUBLIC_APP_URL=http://localhost:3000
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=taskflow
+      - POSTGRES_PASSWORD=taskflow_secret
+      - POSTGRES_DB=taskflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
