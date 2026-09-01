@@ -197,9 +197,11 @@ model Task {
 | `task_deleted` | Broadcast when a task is deleted |
 | `task_moved` | Broadcast when a task is moved between columns |
 
-## 🎨 UI Screenshots
+## 🎨 Screenshots
 
-The application features:
+![TaskFlow — Real-time Collaborative Task Board](https://raw.githubusercontent.com/Diyaneshwar-Pugazhendhi/taskboard/main/screenshots/taskboard.png)
+
+### Features
 
 - **Landing page** with hero, features, and tech stack
 - **Sign in / Sign up** pages with Google OAuth and credentials
