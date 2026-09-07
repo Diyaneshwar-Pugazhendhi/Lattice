@@ -1,5 +1,8 @@
 # TaskFlow — Real-time Collaborative Task Board
 
+![CI](https://github.com/Diyaneshwar-Pugazhendhi/taskboard/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 A production-grade, full-stack task management application featuring real-time collaboration, secure authentication, and a polished UI. Drag-and-drop tasks across columns, see changes instantly, and collaborate with your team.
 
 ![Preview](https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white)
@@ -261,7 +264,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, issues, and feature requests are welcome! Please see [CONTRIBUTING.md](.github/CONTRIBUTING.md) for setup instructions and guidelines.
 
 ## 👤 Author
 
